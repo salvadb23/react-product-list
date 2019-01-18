@@ -160,7 +160,7 @@ Handling the details. If you've got the items above worked out you'll realize th
   - When generating the category elements check the category name against `this.currentCategory` if the names match assign a class to that element, something like `selected-category` remember to use `className` not `class`!
   - You'll need to take into account that the "All" button is it's own category and this category should display all the products! 
 
-Level 6 Challenges 
+**Level 6 Challenges** 
 
 Okay so you did all of the other challenges and you need something more to do, good for you! 
 
