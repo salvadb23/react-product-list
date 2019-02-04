@@ -4,17 +4,25 @@ import './App.css';
 
 class App extends Component {
 
+  getCategories(){
+    return categories.map(category => <button>{category}</button>)
+  }
+
+  getInventory(){
+    return inventory.map(product => <li><h2>{product.name}</h2><h3>${product.price}</h3><h4>{product.category}</h4></li>)
+    }
+
   render() {
     return (
       <div className="App">
-        <h1>Show products here</h1>
+        <h1>Show products here!</h1>
 
         <ul>
-          {/* List product categories here */}
+          {this.getCategories()}
         </ul>
 
         <ul>
-          {/* Products listed here */}
+          {this.getInventory()}
         </ul>
 
       </div>
